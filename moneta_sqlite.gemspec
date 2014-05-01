@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MonetaSqlite::VERSION
   spec.authors       = ["Zander Hill"]
   spec.email         = ["Zander@civet.ws"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Adds keys method to Moneta SQLite}
+  spec.description   = %q{Adds keys method to Moneta SQLite.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
