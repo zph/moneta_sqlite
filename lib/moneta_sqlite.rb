@@ -4,6 +4,7 @@ require 'sqlite3'
 require 'moneta'
 
 module Moneta
+
   module Adapters
     class Sqlite
       def initialize(options = {})
