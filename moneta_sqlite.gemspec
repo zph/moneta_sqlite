@@ -19,7 +19,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "moneta"
-  spec.add_dependency "sqlite3"
+  sqlite = if defined?(JRUBY_VERSION)
+             "jdbc-sqlite3"
+           else
+             "sqlite3"
+           end
+  spec.add_dependency sqlite
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
 end

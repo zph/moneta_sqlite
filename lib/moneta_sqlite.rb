@@ -1,6 +1,12 @@
 require "moneta_sqlite/version"
 
-require 'sqlite3'
+sqlite = if defined?(JRUBY_VERSION)
+           'jdbc-sqlite3'
+         else
+           'sqlite3'
+         end
+
+require sqlite
 require 'moneta'
 
 module Moneta
